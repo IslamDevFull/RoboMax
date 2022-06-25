@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoboMax</title>
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web\fontawesome-free-6.1.1-web\css\all.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            text-align: center;
+            background-color: powderblue;
+            padding: 100px;
+        }
+
+        .img{
+            position: absolute;
+            border-radius: 50%;
+            top: 20px;
+            left: 50px;
+            cursor: pointer;
+            background-color: black;
+        }
+
+        .headerText h1{
+            font-size: 70px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        nav{
+            background-color: #333;
+            position: sticky;
+            top: 0;
+            clear: both;
+        }
+        nav ul{
+            /*border: 2px solid blue;*/
+            width: 100%;
+            margin: 0;
+        }
+        nav ul li{
+            display: inline-block;
+            list-style: none;
+            padding: 10px 20px;
+            margin: 0 20px;
+            /*border: 2px solid red;*/
+            transition: all 2s;
+            cursor: pointer;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: powderblue;
+            font-weight: bold;
+        }
+        nav ul li:hover{
+            background-color: black;
+            box-shadow: 0px 0px 8px 1px blue;
+            transition: all 0.7s;
+        }
+
+        .fa{
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        .drop{
+            background-color: #333;
+            width: 129px;
+            position: absolute;
+            right: 19px;
+            top: 40px;
+            display: none;
+        }
+
+       .drop li{
+            margin: 0;
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding-left: 0;
+            padding-right: 0;
+       }
+
+       .drop li a{
+           padding: 10px 42px;
+       }
+
+       .dropBTN:hover .drop{
+            display: block;
+       }
+ 
+
+    </style>
+</head>
+<body style="height: 2000px;">
+    <div class="header">
+        <div class="img">
+            <img src="android-chrome-192x192.png" alt="">
+        </div>
+        <div class="headerText">
+            <h1>RoboMax</h1>
+            <p>
+                Bolangiz Kelajag sohasini egalashga juda kata imkoniyat
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus placeat aperiam laboriosam, quae quo maiores enim eveniet a laborum harum facilis modi ullam cum ab dolorum sit possimus itaque recusandae?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore modi excepturi recusandae suscipit enim quidem accusantium nesciunt cum porro officia atque culpa, amet neque ea est nihil maxime! Exercitationem, fuga.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis et suscipit sint aut cum ducimus quod, voluptatum qui quam id, impedit maxime perferendis maiores praesentium voluptates magnam similique aliquam reiciendis!
+            </p>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#"><i class="fa fa-solid fa-house-chimney"></i>Bosh Sahifa</a></li>
+            <li><a href="#"><i class="fa fa-solid fa-book"></i>Dars</a></li>
+            <li><a href="#"><i class="fa fa-solid fa-robot"></i>Loyhalar</a></li>
+            <li><a href="#"><i class="fa fa-solid fa-face-laugh-beam"></i>Yangiliklar</a></li>
+            <li style="float: right;" class="dropBTN"><a href="#"><i class="fa fa-solid fa-language"></i>RUS<span style="margin-left: 5px; font-size: 15px;">&#x25bc</span></a>
+                <ul class="drop">
+                    <li><a href="index.html">UZB</a></li>
+                    <li><a href="rus.html">RUS</a></li>
+                    <li><a href="eng.html">ENG</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="content">
+        <iframe src="sidebar.html" frameborder="1" width="500" height="1000"></iframe>
+    </div>
+</body>
+</html>
