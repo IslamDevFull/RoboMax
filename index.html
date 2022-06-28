@@ -14,11 +14,12 @@
             padding: 0;
         }
         .header{
-            text-align: center;
-            background-color: powderblue;
-            padding: 100px;
+            background-image: url(photo_2021-04-09_10-28-49\ \(2\).jpg);
+            background-blend-mode: multiply;
+            background-color: #999;
+            background-size: 100% 100%;
+            padding: 300px;
         }
-
         .img{
             position: absolute;
             border-radius: 50%;
@@ -29,12 +30,29 @@
             border: 2px solid red;
             width: 3%;
         }
-
         .headerText h1{
             font-size: 70px;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            position: relative;
+            animation: toop 2s forwards;
+            color: powderblue;
+            text-shadow: 1px 1px 4px black, -1px -1px 4px black;
         }
-
+        .headerText p{
+            font-size: 40px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: wheat;
+        }
+        @keyframes toop{
+            from{
+                opacity: 0;
+                top: 400px;
+            }
+            to{
+                opacity: 1;
+                top: 0;
+            }
+        }
         nav{
             background-color: #333;
             position: sticky;
@@ -110,22 +128,62 @@
             opacity: 1;
         }
        }
- 
+       .content{
+           background-color: #999;
+           height: 1500px;
+           padding: 5px;
+       }
+       .conH1{
+           text-align: center;
+           padding: 20px 0;
+           margin: 20px 0;
+           font-size: 50px;
+       }
+       img{
+           width: 100%;
+       }
+       .col{
+           width: 100%;
+       }
+       .colDiv{
+           width: 50%;
+           float: left;
+       }
+       .colDiv h1{
+           font-size: 40px;
+       }
+       .colDiv p{
+        font-size: 30px;
+       }
+       .colImg{
+           width: 50%;
+           float: left;
+       }
+       .cart{
+           background-color: white;
+           padding: 20px;
+           width: 30%;
+           text-align: center;
+           clear: both;
+       }
+       .images{
+           background-color: #888;
+           border: 2px solid red;
+           margin: 10px 0;
+       }
 
     </style>
 </head>
 <body style="height: 2000px;">
     <div class="header">
         <div class="img">
-            <img src="android-chrome-192x192.png" alt="" style="width: 100%;">
+            <img src="android-chrome-512x512.png" alt="" style="width: 100%;">
         </div>
         <div class="headerText">
-            <h1>RoboMax</h1>
+            <h1>Robo<span style="color: red;">Max</span></h1>
             <p>
-                Bolangiz Kelajag sohasini egalashga juda kata imkoniyat
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus placeat aperiam laboriosam, quae quo maiores enim eveniet a laborum harum facilis modi ullam cum ab dolorum sit possimus itaque recusandae?
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore modi excepturi recusandae suscipit enim quidem accusantium nesciunt cum porro officia atque culpa, amet neque ea est nihil maxime! Exercitationem, fuga.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis et suscipit sint aut cum ducimus quod, voluptatum qui quam id, impedit maxime perferendis maiores praesentium voluptates magnam similique aliquam reiciendis!
+                <span style="animation: toop 2s 0.5s forwards; position: relative; opacity: 0;">Bolangiz Kelajag sohasini egalashga juda kata imkoniyat</span><br>
+                <span style="animation: toop 2s 1s forwards; position: relative; opacity: 0;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span><br><span style="animation: toop 2s 1.5s forwards; position: relative; opacity: 0;">Necessitatibus placeat aperiam laboriosam,</span>
             </p>
         </div>
     </div>
@@ -144,7 +202,29 @@
         </ul>
     </nav>
     <div class="content">
-        <iframe src="sidebar.html" frameborder="1" width="500" height="1000"></iframe>
+        <h1 class="conH1">Bizning To'garakimizda</h1>
+        <div class="col">
+            <div class="colDiv">
+                <h1>Robo Sumo</h1>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi aliquid recusandae totam est quidem culpa accusantium ipsum hic neque, rerum minus quasi dolores! Repellendus soluta nesciunt quas sequi nisi sint.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis ab dolores eius accusantium possimus consequatur adipisci quia fugit, vel tenetur voluptatum aliquid labore voluptate numquam, nulla repudiandae sunt doloribus quibusdam!Lorem
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit assumenda recusandae quo laboriosam fuga incidunt praesentium laborum rerum sit dolore eaque possimus id beatae nostrum, placeat porro vel fugit qui.
+                </p>
+            </div>
+            <div class="colImg">
+                <img src="photo_2021-04-06_12-30-52.jpg" alt="Robo Sumo">
+            </div>
+        </div>
+        <div class="cart">
+            <h1>Darsliklar</h1>
+            <div class="images">
+                <img src="photo_2021-04-08_11-00-17 (3).jpg">
+            </div>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi optio vel necessitatibus fuga, reprehenderit ipsam! Corrupti neque blanditiis debitis quia. Distinctio incidunt esse magni atque deleniti ad obcaecati voluptate ratione.
+            </p>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
