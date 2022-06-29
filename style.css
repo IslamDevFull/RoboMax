@@ -8,6 +8,7 @@
     background-blend-mode: multiply;
     background-color: #999;
     background-size: 100% 100%;
+    background-attachment: fixed;
     padding: 300px;
 }
 .img{
@@ -19,6 +20,27 @@
     background-color: black;
     border: 2px solid red;
     width: 3%;
+}
+.sotSet{
+    position: absolute;
+    top: 0;
+    right: 100px;
+    width: 200px;
+    height: 50px;
+}
+.sotSet a{
+    text-decoration: none;
+    font-size: 40px;
+    margin-left: 10px;
+}
+.you{
+    color: rgb(253, 0, 0);
+}
+.ins{
+    color: wheat;
+}
+.tg{
+    color: rgb(30, 149, 208);
 }
 .headerText h1{
     font-size: 70px;
@@ -129,15 +151,30 @@ to{
    margin: 20px 0;
    font-size: 50px;
    position: relative;
+   color: white;
+   text-shadow: 1px 1px 3px white, -1px -1px 3px red;
 }
 img{
    width: 100%;
 }
+.col{
+    background-image: url(photo_2021-04-08_11-00-17\ \(3\).jpg);
+    background-blend-mode: multiply;
+    background-color: #888;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    height: 900px;
+}
 .colCard{
-   width: 100%;
-   padding: 0 40px;
+   width: 95.5%;
+   height: 700px;
+   padding: 20px;
+   margin: auto;
    animation: opas 2s;
    position: relative;
+   background-color: white;
+   border-radius: 50px;
+   box-shadow: 0 0 10px 2px white;
 }
 .colDiv{
    width: 50%;
@@ -161,7 +198,7 @@ img{
     color: wheat;
     padding: 0 5px;
     position: absolute;
-    top: 1250px;
+    top: 1300px;
     transition: all 1s;
     border-radius: 20%;
     animation: opas 2s 2s linear forwards;
@@ -169,12 +206,24 @@ img{
 .or:hover,.ol:hover{
     background-color: rgba(0, 0, 0);
 }
-.cart{
+.cardContainer{
+    padding: 20px 0 20px 10px;
+    background-image: url(photo_2021-04-06_12-30-52.jpg);
+    background-blend-mode: multiply;
+    background-color: #888;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    height: 800px;
+}
+.card{
    background-color: white;
    padding: 20px;
-   width: 30%;
+   width: 32%;
    text-align: center;
-   clear: both;
+   float: left;
+   margin-left: 15px;
+   position: relative;
+   box-shadow: 0 0 5px 2px white;
 }
 .images{
    background-color: #888;
@@ -206,4 +255,9 @@ to{
     top: 0;
     opacity: 1;
 }
+}
+footer{
+    height: 300px;
+    padding: 20px;
+    background-color: #333;
 }
