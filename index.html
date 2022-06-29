@@ -7,172 +7,7 @@
     <title>RoboMax</title>
     <link rel="stylesheet" href="fontawesome-free-6.1.1-web\fontawesome-free-6.1.1-web\css\all.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <style>
-        *{
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        .header{
-            background-image: url(photo_2021-04-09_10-28-49\ \(2\).jpg);
-            background-blend-mode: multiply;
-            background-color: #999;
-            background-size: 100% 100%;
-            padding: 300px;
-        }
-        .img{
-            position: absolute;
-            border-radius: 50%;
-            top: 20px;
-            left: 50px;
-            cursor: pointer;
-            background-color: black;
-            border: 2px solid red;
-            width: 3%;
-        }
-        .headerText h1{
-            font-size: 70px;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            position: relative;
-            animation: toop 2s forwards;
-            color: powderblue;
-            text-shadow: 1px 1px 4px black, -1px -1px 4px black;
-        }
-        .headerText p{
-            font-size: 40px;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            color: wheat;
-        }
-        @keyframes toop{
-            from{
-                opacity: 0;
-                top: 400px;
-            }
-            to{
-                opacity: 1;
-                top: 0;
-            }
-        }
-        nav{
-            background-color: #333;
-            position: sticky;
-            top: 0;
-            clear: both;
-        }
-        nav ul{
-            /*border: 2px solid blue;*/
-            width: 100%;
-            margin: 0;
-        }
-        nav ul li{
-            display: inline-block;
-            list-style: none;
-            padding: 10px 20px;
-            margin: 0 20px;
-            /*border: 2px solid red;*/
-            transition: all 2s;
-            cursor: pointer;
-        }
-        nav ul li a{
-            text-decoration: none;
-            color: powderblue;
-            font-weight: bold;
-        }
-        nav ul li:hover{
-            background-color: black;
-            box-shadow: 0px 0px 8px 1px blue;
-            transition: all 0.7s;
-        }
-
-        .fa{
-            margin-right: 10px;
-            font-size: 20px;
-        }
-
-        .drop{
-            background-color: #333;
-            width: 129px;
-            position: absolute;
-            right: 19px;
-            top: 40px;
-            display: none;
-            animation: opa 1s;
-        }
-
-        .drop li{
-            margin: 0;
-            display: block;
-            width: 100%;
-            text-align: center;
-            padding-left: 0;
-            padding-right: 0;
-       }
-
-       .drop li a{
-           padding: 10px 42px;
-       }
-
-       /*.dropBTN:hover .drop{
-            display: block;
-       }*/
-
-       .lan{
-           display: block;
-       }
-
-       @keyframes opa {
-        from{
-            opacity: 0.1;
-        }
-        to{
-            opacity: 1;
-        }
-       }
-       .content{
-           background-color: #999;
-           height: 1500px;
-           padding: 5px;
-       }
-       .conH1{
-           text-align: center;
-           padding: 20px 0;
-           margin: 20px 0;
-           font-size: 50px;
-       }
-       img{
-           width: 100%;
-       }
-       .col{
-           width: 100%;
-       }
-       .colDiv{
-           width: 50%;
-           float: left;
-       }
-       .colDiv h1{
-           font-size: 40px;
-       }
-       .colDiv p{
-        font-size: 30px;
-       }
-       .colImg{
-           width: 50%;
-           float: left;
-       }
-       .cart{
-           background-color: white;
-           padding: 20px;
-           width: 30%;
-           text-align: center;
-           clear: both;
-       }
-       .images{
-           background-color: #888;
-           border: 2px solid red;
-           margin: 10px 0;
-       }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body style="height: 2000px;">
     <div class="header">
@@ -202,21 +37,51 @@
         </ul>
     </nav>
     <div class="content">
-        <h1 class="conH1">Bizning To'garakimizda</h1>
+        <h1 id="conH1" class="conH1 none opa aniTop">Robototexnika To'garakimizda</h1>
         <div class="col">
-            <div class="colDiv">
-                <h1>Robo Sumo</h1>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi aliquid recusandae totam est quidem culpa accusantium ipsum hic neque, rerum minus quasi dolores! Repellendus soluta nesciunt quas sequi nisi sint.
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis ab dolores eius accusantium possimus consequatur adipisci quia fugit, vel tenetur voluptatum aliquid labore voluptate numquam, nulla repudiandae sunt doloribus quibusdam!Lorem
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit assumenda recusandae quo laboriosam fuga incidunt praesentium laborum rerum sit dolore eaque possimus id beatae nostrum, placeat porro vel fugit qui.
-                </p>
+            <div id="colCard" class="colCard none aniTop opa">
+                <div class="colDiv">
+                    <h1>Robo Sumo</h1>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi aliquid recusandae totam est quidem culpa accusantium ipsum hic neque, rerum minus quasi dolores! Repellendus soluta nesciunt quas sequi nisi sint.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis ab dolores eius accusantium possimus consequatur adipisci quia fugit, vel tenetur voluptatum aliquid labore voluptate numquam, nulla repudiandae sunt doloribus quibusdam!Lorem
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit assumenda recusandae quo laboriosam fuga incidunt praesentium laborum rerum sit dolore eaque possimus id beatae nostrum, placeat porro vel fugit qui.
+                    </p>
+                </div>
+                <div class="colImg">
+                    <img src="photo_2021-04-06_12-30-52.jpg" alt="Robo Sumo" style="border-radius: 30%;">
+                </div>
             </div>
-            <div class="colImg">
-                <img src="photo_2021-04-06_12-30-52.jpg" alt="Robo Sumo">
+            <div id="colCard1" class="colCard none">
+                <div class="colDiv">
+                    <h1>Robot Gumanoit</h1>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi aliquid recusandae totam est quidem culpa accusantium ipsum hic neque, rerum minus quasi dolores! Repellendus soluta nesciunt quas sequi nisi sint.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis ab dolores eius accusantium possimus consequatur adipisci quia fugit, vel tenetur voluptatum aliquid labore voluptate numquam, nulla repudiandae sunt doloribus quibusdam!Lorem
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit assumenda recusandae quo laboriosam fuga incidunt praesentium laborum rerum sit dolore eaque possimus id beatae nostrum, placeat porro vel fugit qui.
+                    </p>
+                </div>
+                <div class="colImg">
+                    <img src="photo_2021-04-08_10-21-14.jpg" alt="Robo Sumo" style="border-radius: 30%;">
+                </div>
             </div>
+            <div id="colCard2" class="colCard none">
+                <div class="colDiv">
+                    <h1>Robo Konstruktor</h1>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi aliquid recusandae totam est quidem culpa accusantium ipsum hic neque, rerum minus quasi dolores! Repellendus soluta nesciunt quas sequi nisi sint.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis ab dolores eius accusantium possimus consequatur adipisci quia fugit, vel tenetur voluptatum aliquid labore voluptate numquam, nulla repudiandae sunt doloribus quibusdam!Lorem
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit assumenda recusandae quo laboriosam fuga incidunt praesentium laborum rerum sit dolore eaque possimus id beatae nostrum, placeat porro vel fugit qui.
+                    </p>
+                </div>
+                <div class="colImg">
+                    <img src="photo_2021-04-08_11-00-17 (2).jpg" alt="Robo Sumo" style="border-radius: 30%;">
+                </div>
+            </div>
+            <a id="or" style="left: 0;" class="or none opa" onclick="or()">&#8826</a>
+            <a id="ol" style="right: 0;" class="ol none opa" onclick="ol()">&#8827</a>
         </div>
-        <div class="cart">
+        <div class="cart none">
             <h1>Darsliklar</h1>
             <div class="images">
                 <img src="photo_2021-04-08_11-00-17 (3).jpg">
