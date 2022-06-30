@@ -213,7 +213,7 @@ img{
     background-color: #888;
     background-size: 100% 100%;
     background-attachment: fixed;
-    height: 800px;
+    height: 900px;
 }
 .card{
    background-color: white;
@@ -227,7 +227,6 @@ img{
 }
 .images{
    background-color: #888;
-   border: 2px solid red;
    margin: 10px 0;
 }
 .none{
@@ -257,7 +256,47 @@ to{
 }
 }
 footer{
+    margin-top: 50px;
     height: 300px;
     padding: 20px;
     background-color: #333;
+    text-align: center;
+    clear: both;
+}
+.contact{
+    color: white;
+}
+.contact h1{
+    margin-bottom: 30px;
+}
+.contact h3{
+    margin-bottom: 10px;
+}
+/*******************************************************Dars******************************************************/
+.darsContainer{
+    width: 100%;
+    height: 1500px;
+}
+.darsContent{
+    width: 70%;
+    height: 1500px;
+    background-color: #eeeeee;
+    float: left;
+}
+.darsCard{
+    background-color: white;
+    padding: 20px;
+    width: 45%;
+    text-align: center;
+    float: left;
+    margin-left: 15px;
+    margin-top: 50px;
+    position: relative;
+    box-shadow: 0 0 5px 2px white;
+ }
+.darsSideBar{
+    width: 30%;
+    height: 1500px;
+    background-color: pink;
+    float: left;
 }

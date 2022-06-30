@@ -10,7 +10,13 @@ function scrol(){
         document.getElementById("colCard").style.display = "block";
         document.getElementById("or").style.display = "block";
         document.getElementById("ol").style.display = "block";
-
+    }
+    let i,card;
+    if(document.documentElement.scrollTop > 900){
+        card = document.getElementsByClassName("card")
+        for(i = 0; card.length < 4; i++){
+            card[i].style.display = "block";
+        }    
     }
 }
 function ol(){
