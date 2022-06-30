@@ -1,0 +1,302 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-image: url(photo_2021-04-09_10-28-49\ \(2\).jpg);
+    background-blend-mode: multiply;
+    background-color: #999;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    padding: 300px;
+}
+.img{
+    position: absolute;
+    border-radius: 50%;
+    top: 20px;
+    left: 50px;
+    cursor: pointer;
+    background-color: black;
+    border: 2px solid red;
+    width: 3%;
+}
+.sotSet{
+    position: absolute;
+    top: 0;
+    right: 100px;
+    width: 200px;
+    height: 50px;
+}
+.sotSet a{
+    text-decoration: none;
+    font-size: 40px;
+    margin-left: 10px;
+}
+.you{
+    color: rgb(253, 0, 0);
+}
+.ins{
+    color: wheat;
+}
+.tg{
+    color: rgb(30, 149, 208);
+}
+.headerText h1{
+    font-size: 70px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+    animation: toop 2s forwards;
+    color: powderblue;
+    text-shadow: 1px 1px 4px black, -1px -1px 4px black;
+}
+.headerText p{
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: wheat;
+}
+@keyframes toop{
+    from{
+        opacity: 0;
+        top: 400px;
+    }
+    to{
+        opacity: 1;
+        top: 0;
+    }
+}
+nav{
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    clear: both;
+}
+nav ul{
+    /*border: 2px solid blue;*/
+    width: 100%;
+    margin: 0;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px 20px;
+    margin: 0 20px;
+    /*border: 2px solid red;*/
+    transition: all 2s;
+    cursor: pointer;
+}
+nav ul li a{
+    text-decoration: none;
+    color: powderblue;
+    font-weight: bold;
+}
+nav ul li:hover{
+    background-color: black;
+    box-shadow: 0px 0px 8px 1px blue;
+    transition: all 0.7s;
+}
+
+.fa{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.drop{
+    background-color: #333;
+    width: 129px;
+    position: absolute;
+    right: 19px;
+    top: 40px;
+    display: none;
+    animation: opa 1s;
+}
+
+.drop li{
+    margin: 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.drop li a{
+   padding: 10px 42px;
+}
+
+/*.dropBTN:hover .drop{
+    display: block;
+}*/
+
+.lan{
+   display: block;
+}
+
+@keyframes opa {
+from{
+    opacity: 0.1;
+}
+to{
+    opacity: 1;
+}
+}
+.content{
+   background-color: #999;
+   height: 1500px;
+   padding: 5px;
+}
+.conH1{
+   text-align: center;
+   padding: 20px 0;
+   margin: 20px 0;
+   font-size: 50px;
+   position: relative;
+   color: white;
+   text-shadow: 1px 1px 3px white, -1px -1px 3px red;
+}
+img{
+   width: 100%;
+}
+.col{
+    background-image: url(photo_2021-04-08_11-00-17\ \(3\).jpg);
+    background-blend-mode: multiply;
+    background-color: #888;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    height: 900px;
+}
+.colCard{
+   width: 95.5%;
+   height: 700px;
+   padding: 20px;
+   margin: auto;
+   animation: opas 2s;
+   position: relative;
+   background-color: white;
+   border-radius: 50px;
+   box-shadow: 0 0 10px 2px white;
+}
+.colDiv{
+   width: 50%;
+   float: left;
+}
+.colDiv h1{
+   font-size: 40px;
+}
+.colDiv p{
+    font-size: 30px;
+}
+.colImg{
+   width: 50%;
+   float: left;
+}
+.or,.ol{
+    font-size: 50px;
+    cursor: pointer;
+    user-select: none;
+    background-color: rgba(0,0,0,0.3);
+    color: wheat;
+    padding: 0 5px;
+    position: absolute;
+    top: 1300px;
+    transition: all 1s;
+    border-radius: 20%;
+    animation: opas 2s 2s linear forwards;
+}
+.or:hover,.ol:hover{
+    background-color: rgba(0, 0, 0);
+}
+.cardContainer{
+    padding: 20px 0 20px 10px;
+    background-image: url(photo_2021-04-06_12-30-52.jpg);
+    background-blend-mode: multiply;
+    background-color: #888;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    height: 900px;
+}
+.card{
+   background-color: white;
+   padding: 20px;
+   width: 32%;
+   text-align: center;
+   float: left;
+   margin-left: 15px;
+   position: relative;
+   box-shadow: 0 0 5px 2px white;
+}
+.images{
+   background-color: #888;
+   margin: 10px 0;
+}
+.none{
+    display: none;
+}
+.aniTop{
+    animation: aniTop 2s 1s linear forwards;
+}
+.opa{
+    opacity: 0;
+}
+@keyframes opas{
+from{
+    opacity: 0;
+}
+to{
+    opacity: 1;
+}
+}
+@keyframes aniTop{
+from{
+    top: 200px;
+}
+to{
+    top: 0;
+    opacity: 1;
+}
+}
+footer{
+    margin-top: 50px;
+    height: 300px;
+    padding: 20px;
+    background-color: #333;
+    text-align: center;
+    clear: both;
+}
+.contact{
+    color: white;
+}
+.contact h1{
+    margin-bottom: 30px;
+}
+.contact h3{
+    margin-bottom: 10px;
+}
+/*******************************************************Dars******************************************************/
+.darsContainer{
+    width: 100%;
+    height: 1500px;
+}
+.darsContent{
+    width: 70%;
+    height: 1500px;
+    background-color: #eeeeee;
+    float: left;
+}
+.darsCard{
+    background-color: white;
+    padding: 20px;
+    width: 45%;
+    text-align: center;
+    float: left;
+    margin-left: 15px;
+    margin-top: 50px;
+    position: relative;
+    box-shadow: 0 0 5px 2px white;
+ }
+.darsSideBar{
+    width: 30%;
+    height: 1500px;
+    background-color: pink;
+    float: left;
+}
