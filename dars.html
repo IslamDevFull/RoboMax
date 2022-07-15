@@ -46,13 +46,19 @@
             <h1 class="contentH1">Darsliklar</h1>
             <div class="darsCard" style="margin-left: 40px;">
                 <h1>1 - Darslik</h1>
-                <div class="images">
+                <div class="images" onclick="document.getElementById('oppen').style.display = 'block'">
                     <img src="1_dars.jpg">
+                </div>
+                <div id="oppen" class="oppen" onclick="document.getElementById('oppen').style.display = 'none'">
+                    <img src="1_dars.jpg">
+                </div>
+                <div id="oppen1" class="oppen" onclick="document.getElementById('oppen1').style.display = 'none'">
+                    <img src="2_dars.jpg">
                 </div>
             </div>
             <div class="darsCard">
                 <h1>2 - Darslik</h1>
-                <div class="images">
+                <div class="images" onclick="document.getElementById('oppen1').style.display = 'block'">
                     <img src="2_dars.jpg">
                 </div>
             </div>

@@ -230,12 +230,13 @@ img{
 .images{
    background-color: #888;
    margin: 10px 0;
+   cursor: zoom-in;
 }
 .none{
     display: none;
 }
 .aniTop{
-    animation: aniTop 2s 1s linear forwards;
+    animation: aniTop 1s 1s linear forwards;
 }
 .opa{
     opacity: 0;
@@ -299,10 +300,36 @@ footer{
     margin-top: 50px;
     position: relative;
     box-shadow: 0 0 5px 2px white;
+    transition: all 2s;
+ }
+ .darsCard:hover{
+    box-shadow: 0 0 6px 3px blue;
  }
 .darsSideBar{
     width: 30%;
     height: 1500px;
     background-color: pink;
     float: left;
+}
+.oppen{
+    width: 450%;
+    text-align: center;
+    animation: oppen 1s linear forwards;
+    opacity: 0;
+    display: none;
+    cursor: zoom-out;
+    position: absolute;
+    z-index: 1;
+}
+@keyframes oppen {
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+        top: -100px;
+        left: -35px;
+    }
 }
