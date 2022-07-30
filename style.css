@@ -2,16 +2,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    transition: all 0.5s;
 }
+/*****************************************Header*********************************************************************/
 .header{
-    background-image: url(photo_2021-04-09_10-28-49\ \(2\).jpg);
-    background-blend-mode: multiply;
-    background-color: #999;
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    padding: 300px;
+    background-color: black;
+    padding: 200px 300px 600px 50px;
 }
-.img{
+/*.img{
     position: absolute;
     border-radius: 50%;
     top: 20px;
@@ -20,28 +18,7 @@
     background-color: black;
     border: 2px solid red;
     width: 3%;
-}
-.sotSet{
-    position: absolute;
-    top: 0;
-    right: 100px;
-    width: 200px;
-    height: 50px;
-}
-.sotSet a{
-    text-decoration: none;
-    font-size: 40px;
-    margin-left: 10px;
-}
-.you{
-    color: rgb(253, 0, 0);
-}
-.ins{
-    color: wheat;
-}
-.tg{
-    color: rgb(30, 149, 208);
-}
+}*/
 .headerText h1{
     font-size: 70px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -65,22 +42,33 @@
         top: 0;
     }
 }
+.headerText{
+    width: 70%;
+    float: left;
+}
+.roboHeader{
+    width: 25%;
+    float: left;
+}
+/************************************************Menyu*************************************************************/
 nav{
     background-color: #333;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
     clear: both;
     z-index: 1;
+    width: 100%;
+    padding: 30px;
 }
 nav ul{
     /*border: 2px solid blue;*/
     width: 100%;
-    margin: 0;
 }
 nav ul li{
     display: inline-block;
     list-style: none;
-    padding: 10px 0;
+    padding: 28px 0 20px;
     margin: 0 20px;
     /*border: 2px solid red;*/
     transition: all 2s;
@@ -90,9 +78,10 @@ nav ul li a{
     text-decoration: none;
     color: powderblue;
     font-weight: bold;
-    padding: 10px 20px;
+    padding: 25px 20px 20px;
+    font-size: 1vw;
 }
-nav ul li:hover{
+nav ul li a:hover{
     background-color: black;
     box-shadow: 0px 0px 8px 1px blue;
     transition: all 0.7s;
@@ -100,7 +89,7 @@ nav ul li:hover{
 
 .fa{
     margin-right: 10px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .drop{
@@ -133,17 +122,77 @@ nav ul li:hover{
 .lan{
    display: block;
 }
-
+.sotSet{
+    position: absolute;
+    top: 0;
+    right: 100px;
+    width: 200px;
+    height: 50px;
+}
+.sotSet a{
+    text-decoration: none;
+    font-size: 40px;
+    margin-left: 10px;
+}
+.you{
+    padding: 15px 1px 0px 1px;
+}
+.ins{
+    padding: 20px 1px 0px 1px;
+}
+.tg{
+    padding: 20px 1px 0px 1px;
+}
+.menyu2{
+    background-color: #888;
+    position: fixed;
+    top: 815px;
+    width: 100%;
+    text-align: center;
+    display: none;
+    padding: 20px;
+}
+.menyu2 ul li{
+    display: inline;
+}
+.menyu2 ul li a{
+    text-decoration: none;
+    color: powderblue;
+    text-align: center;
+    margin-left: 10px;
+}
+.menyu2 ul li a i{
+    font-size: 40px;
+}
+/**********************************************Class****************************************************/
 @keyframes opa {
-from{
-    opacity: 0.1;
-}
-to{
-    opacity: 1;
-}
-}
+    from{
+        opacity: 0.1;
+    }
+    to{
+        opacity: 1;
+    }
+    }
+    img{
+        width: 100%;
+     }
+     .none{
+        display: none;
+    }
+    .opa{
+        opacity: 0;
+    }
+    @keyframes opas{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+        }
+/***********************************************Content**************************************************************/
 .content{
-   background-color: #999;
+   background-color: black;
    height: 1500px;
    padding: 5px;
 }
@@ -156,15 +205,8 @@ to{
    color: white;
    text-shadow: 1px 1px 3px white, -1px -1px 3px red;
 }
-img{
-   width: 100%;
-}
 .col{
-    background-image: url(photo_2021-04-08_11-00-17\ \(3\).jpg);
-    background-blend-mode: multiply;
-    background-color: #888;
-    background-size: 100% 100%;
-    background-attachment: fixed;
+    background-color: black;
     height: 900px;
 }
 .colCard{
@@ -232,22 +274,8 @@ img{
    margin: 10px 0;
    cursor: zoom-in;
 }
-.none{
-    display: none;
-}
 .aniTop{
     animation: aniTop 1s 1s linear forwards;
-}
-.opa{
-    opacity: 0;
-}
-@keyframes opas{
-from{
-    opacity: 0;
-}
-to{
-    opacity: 1;
-}
 }
 @keyframes aniTop{
 from{
@@ -258,6 +286,7 @@ to{
     opacity: 1;
 }
 }
+/***************************************Footer******************************************************************/
 footer{
     margin-top: 300px;
     height: 300px;
@@ -347,3 +376,21 @@ footer{
     margin-left: 1%;
     margin-right: 1%;
 }
+/************************************Media******************************************************************/
+@media screen and (max-width: 600px) {
+
+    nav{
+        display: none;
+    }
+    .menyu2{
+        display: block;
+        z-index: 1;
+    }
+    .fa:active{
+        color: rgb(103, 130, 134);
+    }
+    footer{
+        padding-bottom: 350px;
+    }
+}
+

@@ -10,15 +10,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body style="height: 2000px;">
+    <nav id="nav">
+        <ul>
+            <span style="margin-left: 0;"><a id="logo" style="font-size: 60px; color: powderblue; text-decoration: none;" href="index.html">Robo<span style="color: red;">Max</span></a></span>
+            <li><a href="index.html"><i class="fa fa-solid fa-house-chimney"></i>Bosh Sahifa</a></li>
+            <li><a href="dars.html"><i class="fa fa-solid fa-book"></i>Dars</a></li>
+            <li><a href="loyha.html"><i class="fa fa-solid fa-robot"></i>Loyhalar</a></li>
+            <li><a href="#"><i class="fa fa-solid fa-face-laugh-beam"></i>Yangiliklar</a></li>
+            <li onclick="lan()" class="dropBTN"><a href="#"><i class="fa fa-solid fa-language"></i>UZB<span style="margin-left: 5px; font-size: 15px;">&#x25bc</span></a>
+                <ul id="drop" class="drop">
+                    <li><a href="index.html">UZB</a></li>
+                    <li><a href="rus.html">RUS</a></li>
+                </ul>
+            </li>
+            <span style="padding: 0; float: right; margin: 20px 2px 0px 2px;"><a class="you" href=""><img src="youtube.png" style="width: 40px;"></a></span>
+            <span style="padding: 0; float: right; margin: 20px 2px 0px 2px;"><a class="ins" href=""><img src="insta.png" style="width: 30px;"></a></span>
+            <span style="padding: 0; float: right; margin: 20px 2px 0px 2px;"><a class="tg" href=""><img src="telegram.png" style="width: 40px;"></a></span>
+        </ul>
+    </nav>
+    <div class="menyu2">
+        <ul>
+            <li><a href="index.html"><i class="fa fa-solid fa-house-chimney"></i></a></li>
+            <li><a href="dars.html"><i class="fa fa-solid fa-book"></i></a></li>
+            <li><a href="loyha.html"><i class="fa fa-solid fa-robot"></i></a></li>
+            <li><a href="#"><i class="fa fa-solid fa-face-laugh-beam"></i></a></li>
+            <li onclick="lan()" class="dropBTN"><a href="#"><i class="fa fa-solid fa-language"></i></span></a>
+                <ul id="drop" class="drop">
+                    <li><a href="index.html">UZB</a></li>
+                    <li><a href="rus.html">RUS</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
     <div class="header">
-        <div class="img">
-            <img src="android-chrome-512x512.png" alt="" style="width: 100%;">
-        </div>
-        <div class="sotSet">
-            <a class="you" href=""><img src="youtube.png" style="width: 50px;"></a>
-            <a class="ins" href=""><img src="insta.png" style="width: 40px;"></a>
-            <a class="tg" href=""><img src="telegram.png" style="width: 45px;"></a>
-        </div>
         <div class="headerText">
             <h1>Robo<span style="color: red;">Max</span></h1>
             <p>
@@ -26,21 +50,10 @@
                 <span style="animation: toop 2s 1s forwards; position: relative; opacity: 0;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span><br><span style="animation: toop 2s 1.5s forwards; position: relative; opacity: 0;">Necessitatibus placeat aperiam laboriosam,</span>
             </p>
         </div>
+        <div class="roboHeader">
+            <img src="roboHeader.png" alt="RoboMax">
+        </div>
     </div>
-    <nav>
-        <ul>
-            <li><a href="index.html"><i class="fa fa-solid fa-house-chimney"></i>Bosh Sahifa</a></li>
-            <li><a href="dars.html"><i class="fa fa-solid fa-book"></i>Dars</a></li>
-            <li><a href="loyha.html"><i class="fa fa-solid fa-robot"></i>Loyhalar</a></li>
-            <li><a href="#"><i class="fa fa-solid fa-face-laugh-beam"></i>Yangiliklar</a></li>
-            <li onclick="lan()" style="float: right;" class="dropBTN"><a href="#"><i class="fa fa-solid fa-language"></i>UZB<span style="margin-left: 5px; font-size: 15px;">&#x25bc</span></a>
-                <ul id="drop" class="drop">
-                    <li><a href="index.html">UZB</a></li>
-                    <li><a href="rus.html">RUS</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
     <div class="content">
         <div class="col">
             <h1 id="conH1" class="conH1 none opa aniTop">Robototexnika To'garakimizda</h1>
