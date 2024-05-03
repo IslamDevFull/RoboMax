@@ -6,7 +6,7 @@
 }
 /*****************************************Header*********************************************************************/
 .header{
-    background-color: black;
+    background-color: grey;
     padding: 200px 300px 600px 50px;
 }
 /*.img{
@@ -15,7 +15,7 @@
     top: 20px;
     left: 50px;
     cursor: pointer;
-    background-color: black;
+    background-color: grey;
     border: 2px solid red;
     width: 3%;
 }*/
@@ -25,7 +25,7 @@
     position: relative;
     animation: toop 2s forwards;
     color: powderblue;
-    text-shadow: 1px 1px 4px black, -1px -1px 4px black;
+    text-shadow: 1px 1px 4px grey, -1px -1px 4px grey;
 }
 .headerText p{
     font-size: 40px;
@@ -84,7 +84,7 @@ nav ul li a{
     font-size: 20px;
 }
 nav ul li a:hover{
-    background-color: black;
+    background-color: grey;
     box-shadow: 0px 0px 8px 1px blue;
     transition: all 0.7s;
 }
@@ -194,7 +194,7 @@ nav ul li a:hover{
         }
 /***********************************************Content**************************************************************/
 .content{
-   background-color: black;
+   background-color: grey;
    height: 1500px;
    padding: 5px;
 }
@@ -208,7 +208,7 @@ nav ul li a:hover{
    text-shadow: 1px 1px 3px white, -1px -1px 3px red;
 }
 .col{
-    background-color: black;
+    background-color: grey;
     height: 900px;
 }
 .colCard{
@@ -254,7 +254,7 @@ nav ul li a:hover{
 }
 .cardContainer{
     padding: 20px 0 20px 10px;
-    background-image: url(photo_2021-04-06_12-30-52.jpg);
+    background-image: url(lamborghin.jpg.jpg);
     background-blend-mode: multiply;
     background-color: #888;
     background-size: 100% 100%;
