@@ -1,2 +1,2 @@
 # RoboMax
-Robototexnika Sayti
+(RoboMax saytini Lamborghini saytiga o'zgartirilga versiyasi)
